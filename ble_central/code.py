@@ -1,5 +1,5 @@
 # BLE Central Test Software
-#
+# 
 from time import sleep
 from adafruit_ble import BLERadio
 from adafruit_ble.advertising.standard import ProvideServicesAdvertisement
@@ -46,7 +46,7 @@ def bytes_to_ble_addr(byte_arr):
     else:
         hex_6 = ''
     return hex_6
-	
+
 ble = BLERadio()
 TARGET = 'fd:f8:de:77:de:55'  # CHANGE TO YOUR BLE ADDRESS
 print(bytes_to_ble_addr(ble.address_bytes))
